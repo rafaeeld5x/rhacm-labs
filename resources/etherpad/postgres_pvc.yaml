@@ -3,10 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     template: postgresql-persistent-template
-  volumes:
-- name: postgresql-data
-  persistentVolumeClaim:
-    claimName: postgresql
+  name: postgresql-data
 spec:
   accessModes:
   - ReadWriteOnce
